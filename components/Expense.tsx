@@ -1,14 +1,22 @@
+import styles from '../styles/Expense.module.scss'
+	
 type Wrapper = {
 	category: string
-	opals: number
+	money: number
 }
 
-function Expense({category, opals}: Wrapper) {
+function Expense({category, money}: Wrapper) {
 	return (
-		<div>
-			<span>{category}</span>
-			<span>{opals}</span>
-			<span>OPALS</span>
+		<div className={styles.expense}>
+			<div className={styles.category}>
+				<p>{category}</p>
+			</div>
+			<div className={styles.money}>
+				<div>
+					<p>{money}</p>
+					O
+				</div>
+			</div>
 		</div>
 	)
 }

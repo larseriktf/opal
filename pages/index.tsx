@@ -6,12 +6,12 @@ import ExpenseList from '../components/ExpenseList'
 
 export default function Home() {
 	let expenses = [
-		{ category: ":D", opals: 31245 },
-		{ category: "B)", opals: 83285 },
-		{ category: ":/", opals: 32135 },
-		{ category: "xD", opals: 94125 },
-		{ category: ":P", opals: 31245 },
-		{ category: ":O", opals: 312 },
+		{ category: ":D", money: 31245 },
+		{ category: "B)", money: 83285 },
+		{ category: ":/", money: 32135 },
+		{ category: "xD", money: 94125 },
+		{ category: ":P", money: 31245 },
+		{ category: ":O", money: 312 },
 	]
 
   return (

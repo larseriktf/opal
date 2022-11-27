@@ -1,3 +1,5 @@
+import styles from '../styles/Overview.module.scss'
+
 function Overview() {
 	return (
 		<section>

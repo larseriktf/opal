@@ -1,18 +1,20 @@
 import Expense from './Expense'
+import styles from '../styles/ExpenseList.module.scss'
 
 type Wrapper = {
 	expenses: [{
 		category: string
-		opals: number
+		money: number
 	}]
 }
 
 function ExpenseList({expenses}: Wrapper) {
 	return (
 		<section>
-			<ul>
+			<h2 className={styles.month}>January</h2>
+			<ul className={styles.expenseList}>
 				{expenses.map(expense => (
-					<li><Expense category={expense.category} opals={expense.opals}/></li>
+					<li><Expense category={expense.category} money={expense.money}/></li>
 				))}
 			</ul>
 		</section>

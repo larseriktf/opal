@@ -1,0 +1,31 @@
+.expense {
+	margin: 1em;
+	border: 1px solid blue;
+	min-width: 100px;
+
+	p { margin: 0; }
+}
+
+.category {
+	>p {
+		text-align: center;
+	}
+}
+.money {
+	height: 32px;
+	display: flex;
+
+	>div {
+		margin: auto;
+
+		>* {
+			display: inline-block;
+			align-self: center;	
+		}
+
+		>p {
+			margin-right: 10px;
+			font-size: 24px;
+		}
+	}
+}
